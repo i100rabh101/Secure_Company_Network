@@ -4,6 +4,9 @@ This project is based on the Cisco Networking Lab tutorial by **Guru Tech Networ
 
 🎥 Video Walkthrough: [Cisco Packet Tracer Lab – CCNA Practice](https://www.youtube.com/watch?v=Cbv95OxT1FM&list=WL&index=5&ab_channel=GurutechNetworkingTraining)
 
+![Uploading image.png…]()
+
+
 ## 🛠️ What I Did
 
 - Followed the video step-by-step to build the network topology in Cisco Packet Tracer
