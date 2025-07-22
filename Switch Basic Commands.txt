@@ -1,0 +1,31 @@
+- en [enables terminal]
+- conf t
+- hostname SM-SW [sets hostname]
+
+- line console 0 [sets interface]
+- pass cisco [set password]
+- login [authenticates the user]
+- exec-timeout 3 0 [logout after inactivity of 3 mins 0 seconds]
+- logging synchronous
+- exit [exit interface]
+
+- enable passwod cisco
+- banner motd &UNAUTHORIZED& [sets banner message of the day]
+- no ip domain-lookup [disables domain lookup]
+- service password-encryption [encrypts password]
+
+- username cisco password cisco [sets username and password for cisco]
+- ip domain-name cisco.com [sets domain name]
+- crypto key generate rsa general-keys modulus 1024 [generates an rsa key]
+- ip ssh version 2 [enables ssh]
+- line vty 0 15 [sets interface for ssh]
+- login local [will use username and password set above for ssh]
+- transport input ssh [only ssh will be used for remote connection, telnet would not be used]
+- exit [exits from line interface]
+
+- access-list 1 permit 192.168.10.0 0.0.0.255 [allows only management network to access devices remotely]
+- access-list 1 deny any [denys any network except any configured]
+- line vty 0 15 [sets interface]
+- access-class 1 in [set the rule 1 from acl]
+- exit [exit interface]
+- do write [saves]

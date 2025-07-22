@@ -1,0 +1,17 @@
+int range gig1/0/3-8
+switchport mode trunk
+exit
+
+vlan 10
+name Mgt
+vlan 20
+name LAN
+vlan 50
+name WLAN
+vlan 70
+name VOIP
+vlan 90 [sets vlan interface]
+name Internal-Servers [names it]
+exit
+
+do write

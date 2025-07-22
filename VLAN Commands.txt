@@ -1,0 +1,43 @@
+en
+cisco
+conf t
+
+int range fa0/1-2 [sets interface]
+switchport mode trunk [sets interface as trunk]
+exit
+
+vlan 10 [sets vlan interface]
+name Mgt [gives vlan a name]
+vlan 20 [sets vlan interface]
+name LAN [gives vlan a name]
+vlan 50 [sets vlan interface]
+name WLAN [gives vlan a name]
+vlan 70 [sets vlan interface]
+name VOIP [gives vlan a name]
+vlan 199 [sets vlan interface]
+name BlackHole [gives vlan a name]
+exit
+
+int range fa0/3-4 [sets interface]
+switchport mode access [sets interface as access point]
+switchport access vlan 20 [assigns interface a vlan]
+exit
+
+int range fa0/5-6 [sets interface]
+switchport mode access [sets interface as access point]
+switchport voice vlan 70 [assigns interface a voce vlan]
+exit
+
+int fa0/7 [sets interface]
+switchport mode access [sets interface as access point]
+switchport access vlan 50 [assigns interface a vlan]
+exit
+
+int range fa0/8-24, gig0/1-2 [sets interface]
+switchport mode access [sets interface as access point]
+switchport access vlann 199 [assigns interface a vlan]
+shutdown [adminstratively shutdown all interfaces]
+exit
+ 
+do write
+
