@@ -4,7 +4,8 @@ This project is based on the Cisco Networking Lab tutorial by **Guru Tech Networ
 
 🎥 Video Walkthrough: [Cisco Packet Tracer Lab – CCNA Practice](https://www.youtube.com/watch?v=Cbv95OxT1FM&list=WL&index=5&ab_channel=GurutechNetworkingTraining)
 
-![Uploading image.png…]()
+
+<img width="1418" height="860" alt="Screenshot 2025-07-22 142750" src="https://github.com/user-attachments/assets/f5b9ef3f-2b10-400c-903b-8e7d096bedac" />
 
 
 ## 🛠️ What I Did
